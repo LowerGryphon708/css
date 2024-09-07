@@ -1,0 +1,95 @@
+
+body{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0)), url("imagenes/fondo.png"); 
+     background-repeat: no-repeat; 
+     background-size: cover;
+     /* height: 100vh; */
+     /* width: 100vw; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     vertical-align: middle;
+     overflow: hidden;
+     cursor: auto;
+     /* border:5px solid #ec2304;   */
+    
+}
+    
+
+/* Define la animación */
+@keyframes animacionDegradado {
+    0% {
+        color: rgb(0, 221, 255);
+        transform: scale(1);
+    }
+    25% {
+        color: rgb(0, 255, 102);
+        transform: scale(1.05);
+    }
+    50%{
+        color: red;
+        transform: scale(1.1);
+    }
+    75%{
+        color: rgb(0, 255, 102);
+        transform: scale(1.05);
+    }
+    100% {
+        color: rgb(0, 221, 255);
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación al texto */
+.animado {
+    animation: animacionDegradado 1s linear infinite;
+    background-color: #000; /* Fondo negro para un efecto retro */
+    color: #0f0; /* Texto verde como en los viejos monitores */
+    margin: 1vh -1vw;    
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    /* display: flex; */
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #0522fb;
+
+}
+
+.search-container {
+    
+    display: flex; 
+    justify-content: center;
+    margin-top: 35vh;
+    /* border: 5px solid #0230fa; */
+}
+.search-box {   
+    display: flex; 
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search-input {
+    color: #000000;
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 200px;
+    background-color: rgba(134, 233, 228, 0.97);
+    font-weight: bold;
+}
+.search-button {
+    border:none;
+    background-image: url("imagenes/busqueda.png");
+    background-color: #ff0000ee;
+    background-size: cover;
+    color: rgb(3, 3, 3);
+    /* padding: 10px 10px; */
+    /* height: 100%; */
+    width: 100%;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #0522fb;
+}
+    
